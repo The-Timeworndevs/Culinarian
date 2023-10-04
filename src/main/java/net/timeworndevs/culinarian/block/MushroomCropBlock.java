@@ -1,4 +1,4 @@
-package net.timeworndevs.culinarian;
+package net.timeworndevs.culinarian.block;
 
 import net.minecraft.block.*;
 import net.minecraft.item.ItemConvertible;
@@ -17,6 +17,7 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 import net.timeworndevs.culinarian.common.CommonItemRegistry;
+import net.timeworndevs.culinarian.tag.CulinarianBlockTags;
 
 public class MushroomCropBlock extends PlantBlock implements Fertilizable {
     public static final int MAX_AGE = 7;
@@ -32,7 +33,7 @@ public class MushroomCropBlock extends PlantBlock implements Fertilizable {
     }
 
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
-        return floor.isIn(BlockTags.MUSHROOM_GROW_BLOCK);
+        return floor.isIn(CulinarianBlockTags.MUSHROOM_CROP_PLANTABLES);
     }
 
     protected IntProperty getAgeProperty() {

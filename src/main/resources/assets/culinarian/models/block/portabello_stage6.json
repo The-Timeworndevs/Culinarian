@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/crop",
   "textures": {
-    "crop": "quin:block/portabello_stage6"
+    "crop": "culinarian:block/portabello_stage6"
   }
 }

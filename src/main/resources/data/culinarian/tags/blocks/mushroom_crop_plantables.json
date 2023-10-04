@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:logs",
+    "minecraft:hay_bale",
+    "minecraft:mycelium",
+    "minecraft:podzol",
+    "minecraft:moss",
+    "minecraft:dirt"
+  ]
+}

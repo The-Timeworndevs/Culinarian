@@ -6,7 +6,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.sound.BlockSoundGroup;
-import net.timeworndevs.culinarian.MushroomCropBlock;
+import net.timeworndevs.culinarian.block.MushroomCropBlock;
 import net.timeworndevs.culinarian.init.CulinarianRegistry;
 
 public class CommonBlockRegistry {
