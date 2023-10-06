@@ -1,6 +1,13 @@
 {
   "item.culinarian.portabello_mushroom": "Portabello Mushroom",
   "item.culinarian.portabello_spores": "Portabello Spores",
+  "item.culinarian.grilled_portabella": "Grilled Portabella",
+  "item.culinarian.agaric_mushroom": "Agaric Mushroom",
+  "item.culinarian.agaric_spores": "Agaric Spores",
+  "item.culinarian.grilled_agaric": "Grilled Agaric",
 
-  "block.culinarian.portabello": "Portabello"
+  "block.culinarian.portabello": "Portabello",
+  "block.culinarian.agaric": "Agaric",
+
+  "group.culinarian.main": "Culinarian Main Items"
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "culinarian:block/agaric_stage5"
+  }
+}

@@ -3,7 +3,6 @@ package net.timeworndevs.culinarian.block;
 import net.minecraft.block.*;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemStack;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
@@ -19,12 +18,12 @@ import net.minecraft.world.WorldView;
 import net.timeworndevs.culinarian.common.CommonItemRegistry;
 import net.timeworndevs.culinarian.tag.CulinarianBlockTags;
 
-public class MushroomCropBlock extends PlantBlock implements Fertilizable {
+public class PortabelloMushroomCropBlock extends PlantBlock implements Fertilizable {
     public static final int MAX_AGE = 7;
     public static final IntProperty AGE;
     private static final VoxelShape[] AGE_TO_SHAPE;
 
-    public MushroomCropBlock(Settings settings) {
+    public PortabelloMushroomCropBlock(Settings settings) {
         super(settings);
     }
 
@@ -100,7 +99,7 @@ public class MushroomCropBlock extends PlantBlock implements Fertilizable {
     }
 
     @Override
-    public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state) {
+    public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state, boolean isClient) {
         return !this.isMature(state);
     }
 
