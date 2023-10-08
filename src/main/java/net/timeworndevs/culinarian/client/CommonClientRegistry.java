@@ -13,6 +13,6 @@ public class CommonClientRegistry {
     public static void blockRendering() {
         RenderLayer cutout = RenderLayer.getCutout();
 
-        BlockRenderLayerMap.INSTANCE.putBlocks(cutout, CommonBlockRegistry.PORTABELLO);
+        BlockRenderLayerMap.INSTANCE.putBlocks(cutout, CommonBlockRegistry.PORTABELLO, CommonBlockRegistry.AGARIC);
     }
 }

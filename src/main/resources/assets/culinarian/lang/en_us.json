@@ -1,13 +1,22 @@
 {
   "item.culinarian.portabello_mushroom": "Portabello Mushroom",
   "item.culinarian.portabello_spores": "Portabello Spores",
-  "item.culinarian.grilled_portabella": "Grilled Portabella",
+  "item.culinarian.grilled_portabello": "Grilled Portabello",
   "item.culinarian.agaric_mushroom": "Agaric Mushroom",
   "item.culinarian.agaric_spores": "Agaric Spores",
   "item.culinarian.grilled_agaric": "Grilled Agaric",
+  "item.culinarian.red_onion_bulb": "Red Onion Bulb",
+  "item.culinarian.white_onion_bulb": "White Onion Bulb",
 
   "block.culinarian.portabello": "Portabello",
   "block.culinarian.agaric": "Agaric",
+  "block.culinarian.red_onion": "Red Onion",
+  "block.culinarian.white_onion": "White Onion",
 
-  "group.culinarian.main": "Culinarian Main Items"
+  "group.culinarian.main": "Culinarian Main Items",
+
+  "tag.item.culinarian.portabello": "Portabello Mushrooms",
+  "tag.item.culinarian.agaric": "Agaric Mushrooms",
+  "tag.item.culinarian.red_onion": "Red Onion",
+  "tag.item.culinarian.white_onion": "White Onion"
 }

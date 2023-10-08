@@ -24,7 +24,8 @@ public class CulinarianGroups {
             entries.add(CommonItemRegistry.AGARIC_MUSHROOM);
             entries.add(CommonItemRegistry.AGARIC_SPORES);
             entries.add(CommonItemRegistry.GRILLED_AGARIC);
-            entries.add(CommonItemRegistry.MUSHROOM_BURGER);
+            entries.add(CommonItemRegistry.RED_ONION_BULB);
+            entries.add(CommonItemRegistry.WHITE_ONION_BULB);
         }).displayName(Text.translatable("group.culinarian.main")).build());
     }
 }

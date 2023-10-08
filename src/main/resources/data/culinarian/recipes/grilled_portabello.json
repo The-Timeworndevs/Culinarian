@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "culinarian:portabello_mushroom"
+  },
+  "result": "culinarian:grilled_portabello",
+  "experience": 0.35,
+  "cookingtime": 200
+}
