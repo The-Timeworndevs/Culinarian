@@ -14,5 +14,6 @@ public class CommonClientRegistry {
         RenderLayer cutout = RenderLayer.getCutout();
 
         BlockRenderLayerMap.INSTANCE.putBlocks(cutout, CommonBlockRegistry.PORTABELLO, CommonBlockRegistry.AGARIC);
+        BlockRenderLayerMap.INSTANCE.putBlocks(cutout, CommonBlockRegistry.RED_ONION, CommonBlockRegistry.WHITE_ONION);
     }
 }

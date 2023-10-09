@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "culinarian:item/white_onion_bulb"
+  }
+}

@@ -7,11 +7,15 @@
   "item.culinarian.grilled_agaric": "Grilled Agaric",
   "item.culinarian.red_onion_bulb": "Red Onion Bulb",
   "item.culinarian.white_onion_bulb": "White Onion Bulb",
+  "item.culinarian.radish_root": "Radish Root",
+  "item.culinarian.radish_seeds": "Radish Seeds",
+  "item.culinarian.grilled_radish": "Grilled Radish",
 
   "block.culinarian.portabello": "Portabello",
   "block.culinarian.agaric": "Agaric",
   "block.culinarian.red_onion": "Red Onion",
   "block.culinarian.white_onion": "White Onion",
+  "block.culinarian.radish": "Radish",
 
   "group.culinarian.main": "Culinarian Main Items",
 
