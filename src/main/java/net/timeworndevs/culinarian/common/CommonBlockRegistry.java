@@ -5,10 +5,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.sound.BlockSoundGroup;
-import net.timeworndevs.culinarian.block.AgaricMushroomCropBlock;
-import net.timeworndevs.culinarian.block.PortabelloMushroomCropBlock;
-import net.timeworndevs.culinarian.block.RedOnionCropBlock;
-import net.timeworndevs.culinarian.block.WhiteOnionCropBlock;
+import net.timeworndevs.culinarian.block.*;
 import net.timeworndevs.culinarian.init.CulinarianRegistry;
 
 public class CommonBlockRegistry {
@@ -21,6 +18,8 @@ public class CommonBlockRegistry {
 
     public static Block WHITE_ONION;
 
+    public static Block RADISH;
+
     public static void register() {
         PORTABELLO = CulinarianRegistry.register("portabello", new PortabelloMushroomCropBlock(AbstractBlock.Settings.create().mapColor(MapColor.BROWN).breakInstantly().noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY)));
 
@@ -30,5 +29,6 @@ public class CommonBlockRegistry {
 
         WHITE_ONION = CulinarianRegistry.register("white_onion", new WhiteOnionCropBlock(AbstractBlock.Settings.create().mapColor(MapColor.GREEN).breakInstantly().noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY)));
 
+        RADISH = CulinarianRegistry.register("radish", new RadishCropBlock(AbstractBlock.Settings.create().mapColor(MapColor.GREEN).breakInstantly().noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY)));
     }
 }

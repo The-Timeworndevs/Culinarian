@@ -26,6 +26,9 @@ public class CulinarianGroups {
             entries.add(CommonItemRegistry.GRILLED_AGARIC);
             entries.add(CommonItemRegistry.RED_ONION_BULB);
             entries.add(CommonItemRegistry.WHITE_ONION_BULB);
+            entries.add(CommonItemRegistry.RADISH_ROOT);
+            entries.add(CommonItemRegistry.RADISH_SEEDS);
+            entries.add(CommonItemRegistry.GRILLED_RADISH);
         }).displayName(Text.translatable("group.culinarian.main")).build());
     }
 }

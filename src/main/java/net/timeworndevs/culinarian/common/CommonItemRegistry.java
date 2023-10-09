@@ -19,6 +19,10 @@ public class CommonItemRegistry {
 
     public static Item WHITE_ONION_BULB;
 
+    public static Item RADISH_ROOT;
+    public static Item RADISH_SEEDS;
+    public static Item GRILLED_RADISH;
+
 
     public static void register() {
         PORTABELLO_MUSHROOM = CulinarianRegistry.register("portabello_mushroom", new Item(new Item.Settings().food(FoodComponents.APPLE)));
@@ -32,5 +36,9 @@ public class CommonItemRegistry {
         RED_ONION_BULB = CulinarianRegistry.register("red_onion_bulb", new AliasedBlockItem(CommonBlockRegistry.RED_ONION, new Item.Settings().food(FoodComponents.CARROT)));
 
         WHITE_ONION_BULB = CulinarianRegistry.register("white_onion_bulb", new AliasedBlockItem(CommonBlockRegistry.WHITE_ONION, new Item.Settings().food(FoodComponents.CARROT)));
+
+        RADISH_ROOT = CulinarianRegistry.register("radish_root", new Item(new Item.Settings().food(FoodComponents.CARROT)));
+        RADISH_SEEDS = CulinarianRegistry.register("radish_seeds", new AliasedBlockItem(CommonBlockRegistry.RADISH, new Item.Settings()));
+        GRILLED_RADISH = CulinarianRegistry.register("grilled_radish", new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(4).saturationModifier(0.6F).build())));
     }
 }
