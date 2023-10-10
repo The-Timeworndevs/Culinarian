@@ -1,5 +1,6 @@
 package net.timeworndevs.culinarian.common;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
@@ -22,7 +23,6 @@ public class CommonItemRegistry {
     public static Item RADISH_ROOT;
     public static Item RADISH_SEEDS;
     public static Item GRILLED_RADISH;
-
 
     public static void register() {
         PORTABELLO_MUSHROOM = CulinarianRegistry.register("portabello_mushroom", new Item(new Item.Settings().food(FoodComponents.APPLE)));

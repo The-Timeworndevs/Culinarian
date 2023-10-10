@@ -9,14 +9,6 @@ import net.minecraft.util.Identifier;
 import net.timeworndevs.culinarian.Main;
 
 public class CulinarianRegistry {
-    public CulinarianRegistry() {
-        return;
-    }
-
-    public static BlockItem registerBlockItem(String name, Block block) {
-        BlockItem item = new BlockItem(block, new Item.Settings());
-        return register(name, item);
-    }
 
     public static <I extends Item> I register(String name, I item){
         if(item instanceof BlockItem blockItem) {
