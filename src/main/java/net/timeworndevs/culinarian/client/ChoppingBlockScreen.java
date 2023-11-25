@@ -11,6 +11,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
+import net.timeworndevs.culinarian.common.ChoppingBlockScreenHandler;
 import net.timeworndevs.culinarian.recipes.ChoppingBlockRecipe;
 
 import java.util.List;

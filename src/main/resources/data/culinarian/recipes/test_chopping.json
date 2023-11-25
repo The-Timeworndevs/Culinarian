@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:chopping",
+  "type": "culinarian:chopping",
   "count": 1,
   "ingredient": {
     "item": "minecraft:barrier"

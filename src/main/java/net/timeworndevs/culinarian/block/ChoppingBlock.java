@@ -22,7 +22,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import net.timeworndevs.culinarian.client.ChoppingBlockScreenHandler;
+import net.timeworndevs.culinarian.common.ChoppingBlockScreenHandler;
 import org.jetbrains.annotations.Nullable;
 
 public class ChoppingBlock extends Block {
