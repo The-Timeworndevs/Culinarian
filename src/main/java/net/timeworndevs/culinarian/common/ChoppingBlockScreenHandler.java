@@ -166,7 +166,7 @@ public class ChoppingBlockScreenHandler extends ScreenHandler {
     }
 
     public ScreenHandlerType<?> getType() {
-        return ScreenHandlerType.STONECUTTER;
+        return CommonScreenHandlerRegistry.CHOPPING_SCREEN_HANDLER_TYPE;
     }
 
     public void setContentsChangedListener(Runnable contentsChangedListener) {
@@ -195,7 +195,7 @@ public class ChoppingBlockScreenHandler extends ScreenHandler {
                 if (!this.insertItem(itemStack2, 2, 38, false)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (this.world.getRecipeManager().getFirstMatch(RecipeType.STONECUTTING, new SimpleInventory(new ItemStack[]{itemStack2}), this.world).isPresent()) {
+            } else if (this.world.getRecipeManager().getFirstMatch(CommonRecpieRegistry.CHOPPING, new SimpleInventory(new ItemStack[]{itemStack2}), this.world).isPresent()) {
                 if (!this.insertItem(itemStack2, 0, 1, false)) {
                     return ItemStack.EMPTY;
                 }
