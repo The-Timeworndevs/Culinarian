@@ -1,12 +1,10 @@
-package net.timeworndevs.culinarian.common;
+package net.timeworndevs.culinarian.client;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
-import net.minecraft.block.Blocks;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.recipe.StonecuttingRecipe;
 import net.timeworndevs.culinarian.common.CommonBlockRegistry;
 
-public class CommonClientRegistry {
+public class ClientBlockRegistry {
 
     public static void register() {
         blockRendering();
