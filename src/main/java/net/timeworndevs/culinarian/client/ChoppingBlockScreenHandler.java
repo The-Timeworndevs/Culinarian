@@ -16,6 +16,7 @@ import net.minecraft.screen.slot.Slot;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
+import net.timeworndevs.culinarian.common.CommonBlockRegistry;
 
 import java.util.List;
 
@@ -114,7 +115,7 @@ public class ChoppingBlockScreenHandler extends ScreenHandler {
     }
 
     public boolean canUse(PlayerEntity player) {
-        return canUse(this.context, player, Blocks.STONECUTTER);
+        return canUse(this.context, player, CommonBlockRegistry.CHOPPING_BLOCK);
     }
 
     public boolean onButtonClick(PlayerEntity player, int id) {

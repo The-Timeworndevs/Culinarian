@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:chopping",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:barrier"
+  },
+  "result": "minecraft:diamond"
+}

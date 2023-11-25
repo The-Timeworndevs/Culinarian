@@ -23,6 +23,9 @@
     ],
     "client": [
       "net.timeworndevs.culinarian.Client"
+    ],
+    "emi": [
+      "net.timeworndevs.culinarian.EMI"
     ]
   },
   "mixins": [

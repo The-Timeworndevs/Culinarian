@@ -85,7 +85,7 @@ public class ChoppingBlock extends Block {
 
     static {
         FACING = HorizontalFacingBlock.FACING;
-        SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 9.0, 16.0);
+        SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
     }
 
 }

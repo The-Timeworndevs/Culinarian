@@ -22,5 +22,7 @@
   "tag.item.culinarian.portabello": "Portabello Mushrooms",
   "tag.item.culinarian.agaric": "Agaric Mushrooms",
   "tag.item.culinarian.red_onion": "Red Onion",
-  "tag.item.culinarian.white_onion": "White Onion"
+  "tag.item.culinarian.white_onion": "White Onion",
+
+  "container.culinarian.chopping_block": "Chopping Block"
 }
