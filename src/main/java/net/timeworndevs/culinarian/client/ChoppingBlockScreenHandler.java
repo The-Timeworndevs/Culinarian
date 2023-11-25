@@ -17,7 +17,6 @@ import net.minecraft.world.World;
 import net.timeworndevs.culinarian.common.CommonBlockRegistry;
 import net.timeworndevs.culinarian.common.CommonRecpieRegistry;
 import net.timeworndevs.culinarian.recipes.ChoppingBlockRecipe;
-import net.timeworndevs.culinarian.recipes.CulinarianRecipeType;
 
 import java.util.List;
 
