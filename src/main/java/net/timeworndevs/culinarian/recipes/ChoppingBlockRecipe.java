@@ -5,13 +5,15 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
-import net.timeworndevs.culinarian.common.CommonBlockRegistry;
 import net.timeworndevs.culinarian.common.CommonItemRegistry;
+import net.timeworndevs.culinarian.common.CommonRecpieRegistry;
 
 public class ChoppingBlockRecipe extends CuttingRecipe {
 
-    public ChoppingBlockRecipe(RecipeType<?> type, RecipeSerializer<?> serializer, Identifier id, String group, Ingredient input, ItemStack output) {
-        super(type, serializer, id, group, input, output);
+    public static RecipeSerializer<ChoppingBlockRecipe> SERIALIZER = new ChoppingBlockRecipe.Serializer(ChoppingBlockRecipe::new);
+
+    public ChoppingBlockRecipe(Identifier identifier, String group, Ingredient input, ItemStack output) {
+        super(CommonRecpieRegistry.CHOPPING, SERIALIZER, identifier, group, input, output);
     }
 
     @Override
@@ -19,7 +21,14 @@ public class ChoppingBlockRecipe extends CuttingRecipe {
         return this.input.test(inventory.getStack(0));
     }
 
+    public static class Serializer extends CuttingRecipe.Serializer<ChoppingBlockRecipe> {
+        protected Serializer(RecipeFactory<ChoppingBlockRecipe> recipeFactory) {
+            super(recipeFactory);
+        }
+    }
+
     public ItemStack createIcon() {
         return new ItemStack(CommonItemRegistry.CHOPPING_BLOCK);
     }
+
 }

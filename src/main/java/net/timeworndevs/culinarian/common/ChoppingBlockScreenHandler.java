@@ -1,4 +1,4 @@
-package net.timeworndevs.culinarian.client;
+package net.timeworndevs.culinarian.common;
 
 import com.google.common.collect.Lists;
 import net.minecraft.entity.player.PlayerEntity;
@@ -14,8 +14,6 @@ import net.minecraft.screen.slot.Slot;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
-import net.timeworndevs.culinarian.common.CommonBlockRegistry;
-import net.timeworndevs.culinarian.common.CommonRecpieRegistry;
 import net.timeworndevs.culinarian.recipes.ChoppingBlockRecipe;
 
 import java.util.List;
@@ -38,7 +36,7 @@ public class ChoppingBlockScreenHandler extends ScreenHandler {
     }
 
     public ChoppingBlockScreenHandler(int syncId, PlayerInventory playerInventory, final ScreenHandlerContext context) {
-        super(ScreenHandlerType.STONECUTTER, syncId);
+        super(CommonScreenHandlerRegistry.CHOPPING_SCREEN_HANDLER_TYPE, syncId);
         this.selectedRecipe = Property.create();
         this.availableRecipes = Lists.newArrayList();
         this.inputStack = ItemStack.EMPTY;
@@ -168,7 +166,7 @@ public class ChoppingBlockScreenHandler extends ScreenHandler {
     }
 
     public ScreenHandlerType<?> getType() {
-        return ScreenHandlerType.STONECUTTER;
+        return CommonScreenHandlerRegistry.CHOPPING_SCREEN_HANDLER_TYPE;
     }
 
     public void setContentsChangedListener(Runnable contentsChangedListener) {
@@ -197,7 +195,7 @@ public class ChoppingBlockScreenHandler extends ScreenHandler {
                 if (!this.insertItem(itemStack2, 2, 38, false)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (this.world.getRecipeManager().getFirstMatch(RecipeType.STONECUTTING, new SimpleInventory(new ItemStack[]{itemStack2}), this.world).isPresent()) {
+            } else if (this.world.getRecipeManager().getFirstMatch(CommonRecpieRegistry.CHOPPING, new SimpleInventory(new ItemStack[]{itemStack2}), this.world).isPresent()) {
                 if (!this.insertItem(itemStack2, 0, 1, false)) {
                     return ItemStack.EMPTY;
                 }
