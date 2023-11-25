@@ -4,15 +4,14 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.sound.PositionedSoundInstance;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.recipe.StonecuttingRecipe;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
+import net.timeworndevs.culinarian.recipes.ChoppingBlockRecipe;
 
 import java.util.List;
 
@@ -55,14 +54,14 @@ public class ChoppingBlockScreen extends HandledScreen<ChoppingBlockScreenHandle
             int i = this.x + 52;
             int j = this.y + 14;
             int k = this.scrollOffset + 12;
-            List<StonecuttingRecipe> list = ((ChoppingBlockScreenHandler)this.handler).getAvailableRecipes();
+            List<ChoppingBlockRecipe> list = ((ChoppingBlockScreenHandler)this.handler).getAvailableRecipes();
 
             for(int l = this.scrollOffset; l < k && l < ((ChoppingBlockScreenHandler)this.handler).getAvailableRecipeCount(); ++l) {
                 int m = l - this.scrollOffset;
                 int n = i + m % 4 * 16;
                 int o = j + m / 4 * 18 + 2;
                 if (x >= n && x < n + 16 && y >= o && y < o + 18) {
-                    context.drawItemTooltip(this.textRenderer, ((StonecuttingRecipe)list.get(l)).getOutput(this.client.world.getRegistryManager()), x, y);
+                    context.drawItemTooltip(this.textRenderer, ((ChoppingBlockRecipe)list.get(l)).getOutput(this.client.world.getRegistryManager()), x, y);
                 }
             }
         }
@@ -88,14 +87,14 @@ public class ChoppingBlockScreen extends HandledScreen<ChoppingBlockScreenHandle
     }
 
     private void renderRecipeIcons(DrawContext context, int x, int y, int scrollOffset) {
-        List<StonecuttingRecipe> list = ((ChoppingBlockScreenHandler)this.handler).getAvailableRecipes();
+        List<ChoppingBlockRecipe> list = ((ChoppingBlockScreenHandler)this.handler).getAvailableRecipes();
 
         for(int i = this.scrollOffset; i < scrollOffset && i < ((ChoppingBlockScreenHandler)this.handler).getAvailableRecipeCount(); ++i) {
             int j = i - this.scrollOffset;
             int k = x + j % 4 * 16;
             int l = j / 4;
             int m = y + l * 18 + 2;
-            context.drawItem(((StonecuttingRecipe)list.get(i)).getOutput(this.client.world.getRegistryManager()), k, m);
+            context.drawItem(((ChoppingBlockRecipe)list.get(i)).getOutput(this.client.world.getRegistryManager()), k, m);
         }
 
     }

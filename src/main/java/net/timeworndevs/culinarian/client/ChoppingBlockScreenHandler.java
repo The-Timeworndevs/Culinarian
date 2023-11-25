@@ -1,7 +1,6 @@
 package net.timeworndevs.culinarian.client;
 
 import com.google.common.collect.Lists;
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.CraftingResultInventory;
@@ -10,13 +9,15 @@ import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.RecipeType;
-import net.minecraft.recipe.StonecuttingRecipe;
 import net.minecraft.screen.*;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
 import net.timeworndevs.culinarian.common.CommonBlockRegistry;
+import net.timeworndevs.culinarian.common.CommonRecpieRegistry;
+import net.timeworndevs.culinarian.recipes.ChoppingBlockRecipe;
+import net.timeworndevs.culinarian.recipes.CulinarianRecipeType;
 
 import java.util.List;
 
@@ -24,7 +25,7 @@ public class ChoppingBlockScreenHandler extends ScreenHandler {
     private final ScreenHandlerContext context;
     private final Property selectedRecipe;
     private final World world;
-    private List<StonecuttingRecipe> availableRecipes;
+    private List<ChoppingBlockRecipe> availableRecipes;
     private ItemStack inputStack;
     long lastTakeTime;
     final Slot inputSlot;
@@ -102,7 +103,7 @@ public class ChoppingBlockScreenHandler extends ScreenHandler {
         return this.selectedRecipe.get();
     }
 
-    public List<StonecuttingRecipe> getAvailableRecipes() {
+    public List<ChoppingBlockRecipe> getAvailableRecipes() {
         return this.availableRecipes;
     }
 
@@ -145,17 +146,17 @@ public class ChoppingBlockScreenHandler extends ScreenHandler {
         this.selectedRecipe.set(-1);
         this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);
         if (!stack.isEmpty()) {
-            this.availableRecipes = this.world.getRecipeManager().getAllMatches(RecipeType.STONECUTTING, input, this.world);
+            this.availableRecipes = this.world.getRecipeManager().getAllMatches(CommonRecpieRegistry.CHOPPING, input, this.world);
         }
 
     }
 
     void populateResult() {
         if (!this.availableRecipes.isEmpty() && this.isInBounds(this.selectedRecipe.get())) {
-            StonecuttingRecipe stonecuttingRecipe = (StonecuttingRecipe)this.availableRecipes.get(this.selectedRecipe.get());
-            ItemStack itemStack = stonecuttingRecipe.craft(this.input, this.world.getRegistryManager());
+            ChoppingBlockRecipe choppingBlockRecipe = (ChoppingBlockRecipe)this.availableRecipes.get(this.selectedRecipe.get());
+            ItemStack itemStack = choppingBlockRecipe.craft(this.input, this.world.getRegistryManager());
             if (itemStack.isItemEnabled(this.world.getEnabledFeatures())) {
-                this.output.setLastRecipe(stonecuttingRecipe);
+                this.output.setLastRecipe(choppingBlockRecipe);
                 this.outputSlot.setStackNoCallbacks(itemStack);
             } else {
                 this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);
