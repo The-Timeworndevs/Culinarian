@@ -30,10 +30,4 @@ public class Main implements ModInitializer {
 	public static String stringId(String path) {
 		return MODID+":"+path;
 	}
-	public static Identifier id(String path) {
-		return new Identifier(stringId(path));
-	}
-	public static String stringId(String path) {
-		return MODID+":"+path;
-	}
 }
