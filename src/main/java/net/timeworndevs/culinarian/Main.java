@@ -1,6 +1,7 @@
 package net.timeworndevs.culinarian;
 
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.util.Identifier;
 import net.timeworndevs.culinarian.common.CommonBlockRegistry;
 import net.timeworndevs.culinarian.common.CommonItemRegistry;
 import net.timeworndevs.culinarian.common.CommonRecpieRegistry;
@@ -20,5 +21,11 @@ public class Main implements ModInitializer {
 		CommonItemRegistry.register();
 		CulinarianGroups.register();
 		CommonRecpieRegistry.register();
+	}
+	public static Identifier id(String path) {
+		return new Identifier(stringId(path));
+	}
+	public static String stringId(String path) {
+		return MODID+":"+path;
 	}
 }
