@@ -3,6 +3,10 @@ plugins {
 	id 'maven-publish'
 }
 
+loom {
+	accessWidenerPath = file("src/main/resources/culinarian.accesswidener")
+}
+
 sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
 
@@ -75,3 +79,4 @@ publishing {
 		// retrieving dependencies.
 	}
 }
+

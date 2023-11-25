@@ -7,13 +7,10 @@ import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableTextContent;
 import net.minecraft.util.ActionResult;
 
-public class ChoppingBlock extends Block {
+public class ChoppingBlock extends StonecutterBlock {
     private static final Text TITLE = Text.translatable("container.culinarian.chopping_block");
     public ChoppingBlock(Settings settings) {
         super(settings);
     }
-
-    //@Override
-    //public ActionResult onUse(BlockState state)
 
 }

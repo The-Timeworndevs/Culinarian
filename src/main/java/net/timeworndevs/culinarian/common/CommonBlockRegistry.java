@@ -20,6 +20,8 @@ public class CommonBlockRegistry {
 
     public static Block RADISH;
 
+    public static Block CHOPPING_BLOCK;
+
     public static void register() {
         PORTABELLO = CulinarianRegistry.register("portabello", new PortabelloMushroomCropBlock(AbstractBlock.Settings.create().mapColor(MapColor.BROWN).breakInstantly().noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY)));
 
@@ -30,5 +32,7 @@ public class CommonBlockRegistry {
         WHITE_ONION = CulinarianRegistry.register("white_onion", new WhiteOnionCropBlock(AbstractBlock.Settings.create().mapColor(MapColor.GREEN).breakInstantly().noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY)));
 
         RADISH = CulinarianRegistry.register("radish", new RadishCropBlock(AbstractBlock.Settings.create().mapColor(MapColor.GREEN).breakInstantly().noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY)));
+
+        CHOPPING_BLOCK = CulinarianRegistry.register("chopping_block", new ChoppingBlock(AbstractBlock.Settings.create().mapColor(MapColor.BROWN).sounds(BlockSoundGroup.WOOD)));
     }
 }
