@@ -26,16 +26,11 @@ import net.timeworndevs.culinarian.common.ChoppingBlockScreenHandler;
 import org.jetbrains.annotations.Nullable;
 
 public class ChoppingBlock extends Block {
-    private static final Text TITLE = Text.translatable("container.culinarian.chopping_block");    public static final DirectionProperty FACING;
+    private static final Text TITLE = Text.translatable("container.culinarian.chopping_block");
     protected static final VoxelShape SHAPE;
 
     public ChoppingBlock(AbstractBlock.Settings settings) {
         super(settings);
-        this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(FACING, Direction.NORTH));
-    }
-
-    public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return (BlockState)this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing().getOpposite());
     }
 
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
@@ -67,24 +62,11 @@ public class ChoppingBlock extends Block {
         return BlockRenderType.MODEL;
     }
 
-    public BlockState rotate(BlockState state, BlockRotation rotation) {
-        return (BlockState)state.with(FACING, rotation.rotate((Direction)state.get(FACING)));
-    }
-
-    public BlockState mirror(BlockState state, BlockMirror mirror) {
-        return state.rotate(mirror.getRotation((Direction)state.get(FACING)));
-    }
-
-    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(new Property[]{FACING});
-    }
-
     public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {
         return false;
     }
 
     static {
-        FACING = HorizontalFacingBlock.FACING;
         SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
     }
 

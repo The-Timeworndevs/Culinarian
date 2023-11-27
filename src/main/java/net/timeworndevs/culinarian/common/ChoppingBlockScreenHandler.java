@@ -69,7 +69,7 @@ public class ChoppingBlockScreenHandler extends ScreenHandler {
                 context.run((world, pos) -> {
                     long l = world.getTime();
                     if (ChoppingBlockScreenHandler.this.lastTakeTime != l) {
-                        world.playSound((PlayerEntity)null, pos, SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundCategory.BLOCKS, 1.0F, 1.0F);
+                        world.playSound((PlayerEntity)null, pos, SoundEvents.BLOCK_BAMBOO_WOOD_PLACE, SoundCategory.BLOCKS, 1.0F, 1.0F);
                         ChoppingBlockScreenHandler.this.lastTakeTime = l;
                     }
 

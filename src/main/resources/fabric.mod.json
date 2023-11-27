@@ -6,14 +6,16 @@
   "name": "Culinarian",
   "description": "",
   "authors": [
-    "VoxelDragon6 (Textures, Code, Director)"
+    "VoxelDragon6 (Textures, Code, Director)",
+    "KrimsonKolbolt (Textures)",
+    "BowBoy1 (Textures)"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/culinarian/icon.png",
 
   "environment": "*",
