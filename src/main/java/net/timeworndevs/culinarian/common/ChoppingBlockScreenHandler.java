@@ -8,7 +8,6 @@ import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.recipe.RecipeType;
 import net.minecraft.screen.*;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.sound.SoundCategory;
@@ -143,7 +142,7 @@ public class ChoppingBlockScreenHandler extends ScreenHandler {
         this.selectedRecipe.set(-1);
         this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);
         if (!stack.isEmpty()) {
-            this.availableRecipes = this.world.getRecipeManager().getAllMatches(CommonRecpieRegistry.CHOPPING, input, this.world);
+            this.availableRecipes = this.world.getRecipeManager().getAllMatches(CommonRecipeRegistry.CHOPPING, input, this.world);
         }
 
     }
@@ -195,7 +194,7 @@ public class ChoppingBlockScreenHandler extends ScreenHandler {
                 if (!this.insertItem(itemStack2, 2, 38, false)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (this.world.getRecipeManager().getFirstMatch(CommonRecpieRegistry.CHOPPING, new SimpleInventory(new ItemStack[]{itemStack2}), this.world).isPresent()) {
+            } else if (this.world.getRecipeManager().getFirstMatch(CommonRecipeRegistry.CHOPPING, new SimpleInventory(new ItemStack[]{itemStack2}), this.world).isPresent()) {
                 if (!this.insertItem(itemStack2, 0, 1, false)) {
                     return ItemStack.EMPTY;
                 }

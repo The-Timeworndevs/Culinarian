@@ -25,7 +25,6 @@ public class CommonItemRegistry {
     public static Item GRILLED_RADISH;
 
     public static Item ROSE_LOKUM;
-    //public static Item WITHER_ROSE_LOKUM;
 
     public static BlockItem CHOPPING_BLOCK;
 
@@ -47,7 +46,6 @@ public class CommonItemRegistry {
         GRILLED_RADISH = CulinarianRegistry.register("grilled_radish", new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(4).saturationModifier(0.6F).build())));
 
         ROSE_LOKUM = CulinarianRegistry.register("rose_lokum", new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(4).saturationModifier(0.8f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 10*20, 0), 1.0F).build())));
-        //WITHER_ROSE_LOKUM = CulinarianRegistry.register("wither_rose_lokum", new MilkBucketItem(new Item.Settings().food(new FoodComponent.Builder().hunger(4).saturationModifier(0.8f).build())));
 
         CHOPPING_BLOCK = CulinarianRegistry.register("chopping_block", new BlockItem(CommonBlockRegistry.CHOPPING_BLOCK, new Item.Settings()));
     }

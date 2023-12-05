@@ -6,14 +6,14 @@ import net.minecraft.recipe.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 import net.timeworndevs.culinarian.common.CommonItemRegistry;
-import net.timeworndevs.culinarian.common.CommonRecpieRegistry;
+import net.timeworndevs.culinarian.common.CommonRecipeRegistry;
 
 public class ChoppingBlockRecipe extends CuttingRecipe {
 
     public static RecipeSerializer<ChoppingBlockRecipe> SERIALIZER = new ChoppingBlockRecipe.Serializer(ChoppingBlockRecipe::new);
 
     public ChoppingBlockRecipe(Identifier identifier, String group, Ingredient input, ItemStack output) {
-        super(CommonRecpieRegistry.CHOPPING, SERIALIZER, identifier, group, input, output);
+        super(CommonRecipeRegistry.CHOPPING, SERIALIZER, identifier, group, input, output);
     }
 
     @Override
