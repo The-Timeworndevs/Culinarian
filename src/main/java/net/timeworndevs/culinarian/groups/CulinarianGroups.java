@@ -30,6 +30,7 @@ public class CulinarianGroups {
             entries.add(CommonItemRegistry.RADISH_ROOT);
             entries.add(CommonItemRegistry.RADISH_SEEDS);
             entries.add(CommonItemRegistry.GRILLED_RADISH);
+            entries.add(CommonItemRegistry.BEEF_MINCE);
             entries.add(CommonItemRegistry.ROSE_LOKUM);
         }).displayName(Text.translatable("group.culinarian.main")).build());
 

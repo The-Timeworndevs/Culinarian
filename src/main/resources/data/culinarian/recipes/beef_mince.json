@@ -2,7 +2,7 @@
   "type": "culinarian:chopping",
   "count": 1,
   "ingredient": {
-    "item": "minecraft:barrier"
+    "item": "minecraft:beef"
   },
-  "result": "minecraft:diamond"
+  "result": "culinarian:beef_mince"
 }
