@@ -31,6 +31,12 @@ public class CulinarianGroups {
             entries.add(CommonItemRegistry.RADISH_SEEDS);
             entries.add(CommonItemRegistry.GRILLED_RADISH);
             entries.add(CommonItemRegistry.BEEF_MINCE);
+            entries.add(CommonItemRegistry.PORK_MINCE);
+            entries.add(CommonItemRegistry.MUTTON_MINCE);
+            entries.add(CommonItemRegistry.CHICKEN_MINCE);
+            entries.add(CommonItemRegistry.RABBIT_MINCE);
+            entries.add(CommonItemRegistry.ROSE_PETALS);
+            entries.add(CommonItemRegistry.WITHER_ROSE_PETALS);
             entries.add(CommonItemRegistry.ROSE_LOKUM);
         }).displayName(Text.translatable("group.culinarian.main")).build());
 

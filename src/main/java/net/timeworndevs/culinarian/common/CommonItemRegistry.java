@@ -25,6 +25,13 @@ public class CommonItemRegistry {
     public static Item GRILLED_RADISH;
 
     public static Item BEEF_MINCE;
+    public static Item PORK_MINCE;
+    public static Item CHICKEN_MINCE;
+    public static Item MUTTON_MINCE;
+    public static Item RABBIT_MINCE;
+
+    public static Item ROSE_PETALS;
+    public static Item WITHER_ROSE_PETALS;
 
     public static Item ROSE_LOKUM;
 
@@ -48,6 +55,13 @@ public class CommonItemRegistry {
         GRILLED_RADISH = CulinarianRegistry.register("grilled_radish", new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(4).saturationModifier(0.6F).build())));
 
         BEEF_MINCE = CulinarianRegistry.register("beef_mince", new Item(new Item.Settings().food(FoodComponents.BEEF)));
+        PORK_MINCE = CulinarianRegistry.register("pork_mince", new Item(new Item.Settings().food(FoodComponents.PORKCHOP)));
+        CHICKEN_MINCE = CulinarianRegistry.register("chicken_mince", new Item(new Item.Settings().food(FoodComponents.CHICKEN)));
+        MUTTON_MINCE = CulinarianRegistry.register("mutton_mince", new Item(new Item.Settings().food(FoodComponents.MUTTON)));
+        RABBIT_MINCE = CulinarianRegistry.register("rabbit_mince", new Item(new Item.Settings().food(FoodComponents.RABBIT)));
+
+        ROSE_PETALS = CulinarianRegistry.register("rose_petals", new Item(new Item.Settings()));
+        WITHER_ROSE_PETALS = CulinarianRegistry.register("wither_rose_petals", new Item(new Item.Settings()));
 
         ROSE_LOKUM = CulinarianRegistry.register("rose_lokum", new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(4).saturationModifier(0.8f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 10*20, 0), 1.0F).build())));
 

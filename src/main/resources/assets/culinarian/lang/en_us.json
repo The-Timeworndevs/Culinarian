@@ -11,6 +11,12 @@
   "item.culinarian.radish_seeds": "Radish Seeds",
   "item.culinarian.grilled_radish": "Grilled Radish",
   "item.culinarian.beef_mince": "Minced Beef",
+  "item.culinarian.pork_mince": "Minced Pork",
+  "item.culinarian.chicken_mince": "Minced Chicken",
+  "item.culinarian.mutton_mince": "Minced Mutton",
+  "item.culinarian.rabbit_mince": "Minced Rabbit",
+  "item.culinarian.rose_petals": "Rose Petals",
+  "item.culinarian.wither_rose_petals": "Wither Rose Petals",
   "item.culinarian.rose_lokum": "Rose Turkish Delight",
 
   "block.culinarian.portabello": "Portabello",
@@ -27,6 +33,8 @@
   "tag.item.culinarian.agaric": "Agaric Mushrooms",
   "tag.item.culinarian.red_onion": "Red Onion",
   "tag.item.culinarian.white_onion": "White Onion",
+
+  "tag.block.culinarian.mushroom_crop_plantables": "Mushroom Substrates",
 
   "container.culinarian.chopping_block": "Chopping Block"
 }

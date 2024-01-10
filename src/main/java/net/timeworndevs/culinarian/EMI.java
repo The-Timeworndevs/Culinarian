@@ -6,6 +6,7 @@ import net.minecraft.util.Identifier;
 
 public class EMI implements EmiPlugin {
 
+    
     @Override
     public void register(EmiRegistry registry) {
 
