@@ -40,6 +40,7 @@
     "java": ">=17"
   },
   "suggests": {
-    "another-mod": "*"
+    "another-mod": "*",
+    "emi": ">=1.0.24+1.20.1"
   }
 }
