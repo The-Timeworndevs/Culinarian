@@ -24,6 +24,10 @@ public class CulinarianItems {
     }
 
     public static final Item PORTABELLO_MUSHROOM = register("portabello_mushroom", Item::new, new Item.Settings());
+    public static final Item AGARIC_MUSHROOM = register("agaric_mushroom", Item::new, new Item.Settings());
+
+    public static final Item GRILLED_PORTABELLO = register("grilled_portabello", Item::new, new Item.Settings());
+    public static final Item GRILLED_AGARIC = register("grilled_agaric", Item::new, new Item.Settings());
 
     public static void init() {
 

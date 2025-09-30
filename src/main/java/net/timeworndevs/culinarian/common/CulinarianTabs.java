@@ -23,6 +23,9 @@ public class CulinarianTabs {
 
         ItemGroupEvents.modifyEntriesEvent(CULINARIAN_ITEMS_KEY).register((entries) -> {
             entries.add(CulinarianItems.PORTABELLO_MUSHROOM);
+            entries.add(CulinarianItems.AGARIC_MUSHROOM);
+            entries.add(CulinarianItems.GRILLED_PORTABELLO);
+            entries.add(CulinarianItems.GRILLED_AGARIC);
         });
     }
 }
