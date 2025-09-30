@@ -1,9 +1,0 @@
-{
-  "type": "culinarian:chopping",
-  "count": 1,
-  "ingredient": {
-    "item": "minecraft:porkchop"
-  },
-  "result": "culinarian:pork_mince",
-  "count": 2
-}

@@ -1,46 +1,44 @@
 {
-  "schemaVersion": 1,
-  "id": "culinarian",
-  "version": "${version}",
-
-  "name": "Culinarian",
-  "description": "",
-  "authors": [
-    "VoxelDragon6 (Textures, Code, Director)",
-    "KrimsonKolbolt (Textures)",
-    "BowBoy1 (Textures)"
-  ],
-  "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
-  },
-
-  "license": "MIT",
-  "icon": "assets/culinarian/icon.png",
-
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "net.timeworndevs.culinarian.Main"
-    ],
-    "client": [
-      "net.timeworndevs.culinarian.Client"
-    ],
-    "emi": [
-      "net.timeworndevs.culinarian.EMI"
-    ]
-  },
-  "mixins": [
-  ],
-  "accessWidener": "culinarian.accesswidener",
-  "depends": {
-    "fabricloader": ">=0.14.22",
-    "fabric-api": "*",
-    "minecraft": "~1.20",
-    "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*",
-    "emi": ">=1.0.24+1.20.1"
-  }
+	"schemaVersion": 1,
+	"id": "culinarian",
+	"version": "${version}",
+	"name": "Culinarian",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/culinarian/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.timeworndevs.culinarian.Culinarian"
+		],
+		"client": [
+			"net.timeworndevs.culinarian.CulinarianClient"
+		],
+		"fabric-datagen": [
+			"net.timeworndevs.culinarian.CulinarianDataGenerator"
+		]
+	},
+	"mixins": [
+		"culinarian.mixins.json",
+		{
+			"config": "culinarian.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
 }

@@ -1,9 +1,0 @@
-{
-  "type": "culinarian:chopping",
-  "count": 1,
-  "ingredient": {
-    "item": "minecraft:rose_bush"
-  },
-  "result": "culinarian:rose_petals",
-  "count": 4
-}

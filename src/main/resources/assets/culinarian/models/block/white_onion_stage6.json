@@ -1,6 +1,0 @@
-{
-  "parent": "culinarian:block/crop_cross",
-  "textures": {
-    "cross": "culinarian:block/white_onion_stage6"
-  }
-}
