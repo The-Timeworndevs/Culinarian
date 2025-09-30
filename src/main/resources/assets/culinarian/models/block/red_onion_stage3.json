@@ -1,0 +1,6 @@
+{
+  "parent": "culinarian:block/crop_cross",
+  "textures": {
+    "cross": "culinarian:block/red_onion_stage3"
+  }
+}

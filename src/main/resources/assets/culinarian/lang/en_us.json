@@ -1,0 +1,40 @@
+{
+  "item.culinarian.portabello_mushroom": "Portabello Mushroom",
+  "item.culinarian.portabello_spores": "Portabello Spores",
+  "item.culinarian.grilled_portabello": "Grilled Portabello",
+  "item.culinarian.agaric_mushroom": "Agaric Mushroom",
+  "item.culinarian.agaric_spores": "Agaric Spores",
+  "item.culinarian.grilled_agaric": "Grilled Agaric",
+  "item.culinarian.red_onion_bulb": "Red Onion Bulb",
+  "item.culinarian.white_onion_bulb": "White Onion Bulb",
+  "item.culinarian.radish_root": "Radish Root",
+  "item.culinarian.radish_seeds": "Radish Seeds",
+  "item.culinarian.grilled_radish": "Grilled Radish",
+  "item.culinarian.beef_mince": "Minced Beef",
+  "item.culinarian.pork_mince": "Minced Pork",
+  "item.culinarian.chicken_mince": "Minced Chicken",
+  "item.culinarian.mutton_mince": "Minced Mutton",
+  "item.culinarian.rabbit_mince": "Minced Rabbit",
+  "item.culinarian.rose_petals": "Rose Petals",
+  "item.culinarian.wither_rose_petals": "Wither Rose Petals",
+  "item.culinarian.rose_lokum": "Rose Turkish Delight",
+
+  "block.culinarian.portabello": "Portabello",
+  "block.culinarian.agaric": "Agaric",
+  "block.culinarian.red_onion": "Red Onion",
+  "block.culinarian.white_onion": "White Onion",
+  "block.culinarian.radish": "Radish",
+  "block.culinarian.chopping_block": "Chopping Block",
+
+  "group.culinarian.main": "Culinarian Main Items",
+  "group.culinarian.block": "Culinarian Main Blocks",
+
+  "tag.item.culinarian.portabello": "Portabello Mushrooms",
+  "tag.item.culinarian.agaric": "Agaric Mushrooms",
+  "tag.item.culinarian.red_onion": "Red Onion",
+  "tag.item.culinarian.white_onion": "White Onion",
+
+  "tag.block.culinarian.mushroom_crop_plantables": "Mushroom Substrates",
+
+  "container.culinarian.chopping_block": "Chopping Block"
+}
