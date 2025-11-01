@@ -17,12 +17,6 @@
 	"entrypoints": {
 		"main": [
           "net.timeworndevs.culinarian.Main"
-		],
-		"client": [
-			"net.timeworndevs.culinarian.CulinarianClient"
-		],
-		"fabric-datagen": [
-			"net.timeworndevs.culinarian.CulinarianDataGenerator"
 		]
 	},
 	"mixins": [
