@@ -6,7 +6,10 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Block;
 import net.timeworndevs.culinarian.Main;
+import org.apache.commons.compress.compressors.lz77support.LZ77Compressor;
 
 import java.util.function.Function;
 
@@ -28,8 +31,10 @@ public class CulinarianItems {
 
     public static final Item GRILLED_PORTABELLO = register("grilled_portabello", Item::new, new Item.Properties());
     public static final Item GRILLED_AGARIC = register("grilled_agaric", Item::new, new Item.Properties());
+    public static final Item PORTABELLO_SPORES = register("portabello_spores", Item::new, new Item.Properties());
 
     public static void init() {
 
     }
+
 }

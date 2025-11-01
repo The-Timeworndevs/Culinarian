@@ -25,6 +25,7 @@ public class CulinarianTabs {
             entries.accept(CulinarianItems.AGARIC_MUSHROOM);
             entries.accept(CulinarianItems.GRILLED_PORTABELLO);
             entries.accept(CulinarianItems.GRILLED_AGARIC);
+            entries.accept(CulinarianItems.PORTABELLO_SPORES);
         });
     }
 }
