@@ -43,7 +43,7 @@ public class CulinarianBlocks {
         return ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MOD_ID, name));
     }
 
-    public static final Block PORTABELLO_CROP = register("portabello_crop", PortabelloCropBlock::new, BlockBehaviour.Properties.of().sound(SoundType.CROP).noOcclusion(), true);
+    public static final Block PORTABELLO_CROP = register("portabello_crop", PortabelloCropBlock::new, BlockBehaviour.Properties.of().sound(SoundType.CROP).noOcclusion().noCollision(), true);
 
     public static void init() {
 
