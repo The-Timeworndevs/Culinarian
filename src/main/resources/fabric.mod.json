@@ -27,10 +27,11 @@
 		}
 	],
 	"depends": {
-		"fabricloader": ">=0.17.2",
-		"minecraft": "~1.21.8",
-		"java": ">=21",
-		"fabric-api": "*"
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*",
+		"lithostitched": "*"
 	},
 	"suggests": {
 		"another-mod": "*"

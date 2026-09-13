@@ -1,7 +1,7 @@
 package net.timeworndevs.culinarian.common;
 
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import net.timeworndevs.culinarian.Main;
@@ -15,6 +15,6 @@ public class CulinarianTags {
     }
 
     public static TagKey<Block> blockTagKey(String modid, String id) {
-        return TagKey.create(BuiltInRegistries.BLOCK.key(), ResourceLocation.fromNamespaceAndPath(modid, id));
+        return TagKey.create(BuiltInRegistries.BLOCK.key(), Identifier.fromNamespaceAndPath(modid, id));
     }
 }
