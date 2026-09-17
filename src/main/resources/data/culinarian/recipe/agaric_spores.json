@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "#culinarian:agaric_mushrooms"
+  ],
+  "result": {
+    "id": "culinarian:agaric_spores"
+  }
+}

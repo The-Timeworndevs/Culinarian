@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "experience": 0.35,
+  "ingredient": "culinarian:agaric_mushroom",
+  "result": {
+    "id": "culinarian:grilled_agaric"
+  }
+}

@@ -10,10 +10,11 @@ import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 public class CulinarianConsumables {
 
     //Food Properties
-    public static final FoodProperties AGARIC_FOOD = new FoodProperties(4, 1.5f, false);
-    public static final FoodProperties PORTABELLO_FOOD = new FoodProperties(2, 3f, false);
+    public static final FoodProperties AGARIC_FOOD = new FoodProperties(2, 1.5f, false);
+    public static final FoodProperties PORTABELLO_FOOD = new FoodProperties(4, 4.5f, false);
     public static final FoodProperties GRILLED_AGARIC_FOOD = new FoodProperties(3, 2f, false);
     public static final FoodProperties GRILLED_PORTABELLO_FOOD = new FoodProperties(8, 9f, false);
+    public static final FoodProperties BAKED_CARROT_FOOD = new FoodProperties(6, 6.5f, false);
 
     //Food Effects
     public static final Consumable AGARIC_EFFECTS = Consumables.defaultFood()

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "#culinarian:portabello_mushrooms"
+  ],
+  "result": {
+    "id": "culinarian:portabello_spores"
+  }
+}

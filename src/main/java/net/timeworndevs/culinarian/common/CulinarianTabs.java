@@ -1,5 +1,6 @@
 package net.timeworndevs.culinarian.common;
 
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -7,7 +8,9 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.timeworndevs.culinarian.Main;
 
 public class CulinarianTabs {
@@ -18,11 +21,20 @@ public class CulinarianTabs {
         output.accept(CulinarianItems.AGARIC_MUSHROOM);
         output.accept(CulinarianItems.GRILLED_PORTABELLO);
         output.accept(CulinarianItems.GRILLED_AGARIC);
+        output.accept(CulinarianItems.BAKED_CARROT);
         output.accept(CulinarianItems.PORTABELLO_SPORES);
         output.accept(CulinarianItems.AGARIC_SPORES);
     }).build();
 
     public static void init() {
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, CULINARIAN_ITEMS_KEY, CULINARIAN_ITEMS);
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register((tab) -> {
+            tab.insertAfter(Items.CARROT, CulinarianItems.BAKED_CARROT);
+            tab.insertAfter(Items.COOKED_RABBIT, CulinarianItems.PORTABELLO_MUSHROOM);
+            tab.insertAfter(CulinarianItems.PORTABELLO_MUSHROOM, CulinarianItems.GRILLED_PORTABELLO);
+            tab.insertAfter(CulinarianItems.GRILLED_PORTABELLO, CulinarianItems.AGARIC_MUSHROOM);
+            tab.insertAfter(CulinarianItems.AGARIC_MUSHROOM, CulinarianItems.GRILLED_AGARIC);
+        });
     }
 }

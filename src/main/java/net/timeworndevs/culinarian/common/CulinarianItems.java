@@ -16,8 +16,9 @@ public class CulinarianItems {
     //Foods
     public static final Item PORTABELLO_MUSHROOM = registerItem("portabello_mushroom", properties -> new Item(properties.food(CulinarianConsumables.PORTABELLO_FOOD)));
     public static final Item AGARIC_MUSHROOM = registerItem("agaric_mushroom", properties -> new Item(properties.food(CulinarianConsumables.AGARIC_FOOD, CulinarianConsumables.AGARIC_EFFECTS)));
-    public static final Item GRILLED_PORTABELLO = registerItem("grilled_portabello", properties -> new Item(properties.food(CulinarianConsumables.PORTABELLO_FOOD)));
-    public static final Item GRILLED_AGARIC = registerItem("grilled_agaric", properties -> new Item(properties.food(CulinarianConsumables.AGARIC_FOOD, CulinarianConsumables.AGARIC_EFFECTS)));
+    public static final Item GRILLED_PORTABELLO = registerItem("grilled_portabello", properties -> new Item(properties.food(CulinarianConsumables.GRILLED_PORTABELLO_FOOD)));
+    public static final Item GRILLED_AGARIC = registerItem("grilled_agaric", properties -> new Item(properties.food(CulinarianConsumables.GRILLED_AGARIC_FOOD, CulinarianConsumables.GRILLED_AGARIC_EFFECTS)));
+    public static final Item BAKED_CARROT = registerItem("baked_carrot", properties -> new Item(properties.food(CulinarianConsumables.BAKED_CARROT_FOOD)));
 
     //Seeds
     public static final Item PORTABELLO_SPORES = registerItem("portabello_spores", properties -> new BlockItem(CulinarianBlocks.PORTABELLO_CROP, properties));
