@@ -10,40 +10,32 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.PushReaction;
 import net.timeworndevs.culinarian.Main;
-import net.timeworndevs.culinarian.common.block.MushroomCropBlock;
 import net.timeworndevs.culinarian.common.block.PortabelloCropBlock;
 
 import java.util.function.Function;
 
 public class CulinarianBlocks {
 
-    public static Block register(String name, Function<BlockBehaviour.Properties, Block> factory, BlockBehaviour.Properties settings, boolean shouldregister) {
+    public static final Block PORTABELLO_CROP = registerBlockWithoutBlockItem("portabello_crop", properties -> new PortabelloCropBlock(BlockBehaviour.Properties.of().sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().pushReaction(PushReaction.DESTROY)));
 
-        ResourceKey<Block> blockkey = keyOfBlock(name);
-
-        Block block = factory.apply(settings.setId(blockkey));
-
-        if (shouldregister) {
-            ResourceKey<Item> itemkey = keyOfItem(name);
-
-            BlockItem blockitem = new BlockItem(block, new Item.Properties().setId(itemkey).useBlockDescriptionPrefix());
-
-            Registry.register(BuiltInRegistries.ITEM, itemkey, blockitem);
-        }
-
-        return Registry.register(BuiltInRegistries.BLOCK, blockkey, block);
+    private static Block registerBlockWithoutBlockItem(String name, Function<BlockBehaviour.Properties, Block> function) {
+        Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Main.MOD_ID, name))));
+        return Registry.register(BuiltInRegistries.BLOCK, Identifier.fromNamespaceAndPath(Main.MOD_ID, name), toRegister);
     }
 
-    private static ResourceKey<Block> keyOfBlock(String name) {
-        return ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Main.MOD_ID, name));
+    private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
+        Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Main.MOD_ID, name))));
+        registerBlockItem(name, toRegister);
+        return Registry.register(BuiltInRegistries.BLOCK, Identifier.fromNamespaceAndPath(Main.MOD_ID, name), toRegister);
     }
 
-    private static ResourceKey<Item> keyOfItem(String name) {
-        return ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MOD_ID, name));
+    private static void registerBlockItem(String name, Block block) {
+        Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(Main.MOD_ID, name),
+                new BlockItem(block, new Item.Properties().useBlockDescriptionPrefix()
+                        .setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MOD_ID, name)))));
     }
-
-    public static final Block PORTABELLO_CROP = register("portabello_crop", PortabelloCropBlock::new, BlockBehaviour.Properties.of().sound(SoundType.CROP).noOcclusion().noCollision(), true);
 
     public static void init() {
 
