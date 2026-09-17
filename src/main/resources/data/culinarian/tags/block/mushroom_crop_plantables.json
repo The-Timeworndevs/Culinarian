@@ -2,6 +2,7 @@
   "values": [
     "minecraft:mycelium",
     "minecraft:podzol",
-    "minecraft:dirt"
+    "minecraft:dirt",
+    "minecraft:grass_block"
   ]
 }

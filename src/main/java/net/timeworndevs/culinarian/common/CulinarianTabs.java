@@ -19,6 +19,7 @@ public class CulinarianTabs {
         output.accept(CulinarianItems.GRILLED_PORTABELLO);
         output.accept(CulinarianItems.GRILLED_AGARIC);
         output.accept(CulinarianItems.PORTABELLO_SPORES);
+        output.accept(CulinarianItems.AGARIC_SPORES);
     }).build();
 
     public static void init() {

@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.PushReaction;
 import net.timeworndevs.culinarian.Main;
+import net.timeworndevs.culinarian.common.block.AgaricCropBlock;
 import net.timeworndevs.culinarian.common.block.PortabelloCropBlock;
 
 import java.util.function.Function;
@@ -19,6 +20,7 @@ import java.util.function.Function;
 public class CulinarianBlocks {
 
     public static final Block PORTABELLO_CROP = registerBlockWithoutBlockItem("portabello_crop", properties -> new PortabelloCropBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().pushReaction(PushReaction.DESTROY)));
+    public static final Block AGARIC_CROP = registerBlockWithoutBlockItem("agaric_crop", properties -> new AgaricCropBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().pushReaction(PushReaction.DESTROY)));
 
     private static Block registerBlockWithoutBlockItem(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Main.MOD_ID, name))));

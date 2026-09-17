@@ -21,6 +21,7 @@ public class CulinarianItems {
 
     //Seeds
     public static final Item PORTABELLO_SPORES = registerItem("portabello_spores", properties -> new BlockItem(CulinarianBlocks.PORTABELLO_CROP, properties));
+    public static final Item AGARIC_SPORES = registerItem("agaric_spores", properties -> new BlockItem(CulinarianBlocks.AGARIC_CROP, properties));
 
 
     public static ResourceKey<Item> getRK(Item item) {
