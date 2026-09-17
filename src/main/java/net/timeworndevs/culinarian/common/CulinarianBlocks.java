@@ -19,7 +19,7 @@ import java.util.function.Function;
 public class CulinarianBlocks {
 
     public static final Block PORTABELLO_CROP = registerBlockWithoutBlockItem("portabello_crop", properties -> new PortabelloCropBlock(BlockBehaviour.Properties.of().sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().pushReaction(PushReaction.DESTROY)));
-
+    
     private static Block registerBlockWithoutBlockItem(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Main.MOD_ID, name))));
         return Registry.register(BuiltInRegistries.BLOCK, Identifier.fromNamespaceAndPath(Main.MOD_ID, name), toRegister);
