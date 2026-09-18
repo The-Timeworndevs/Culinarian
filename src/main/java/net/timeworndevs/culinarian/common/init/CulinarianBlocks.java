@@ -28,6 +28,9 @@ public class CulinarianBlocks {
 
     //Wild crops
     public static final Block WILD_WHEAT = registerBlock("wild_wheat", properties -> new TallGrassBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_YELLOW).offsetType(BlockBehaviour.OffsetType.XYZ)));
+    public static final Block WILD_CARROTS = registerBlock("wild_carrots", properties -> new TallGrassBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_LIGHT_GREEN).offsetType(BlockBehaviour.OffsetType.XYZ)));
+    public static final Block WILD_POTATOES = registerBlock("wild_potatoes", properties -> new TallGrassBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_LIGHT_GREEN).offsetType(BlockBehaviour.OffsetType.XYZ)));
+    public static final Block WILD_BEETS = registerBlock("wild_beets", properties -> new TallGrassBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_LIGHT_GREEN).offsetType(BlockBehaviour.OffsetType.XYZ)));
     public static final Block WILD_PORTOBELLO = registerBlock("wild_portobello", properties -> new WildMushroomBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_BROWN).offsetType(BlockBehaviour.OffsetType.XYZ)));
     public static final Block WILD_AGARIC = registerBlock("wild_agaric", properties -> new WildMushroomBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_RED).offsetType(BlockBehaviour.OffsetType.XYZ)));
 

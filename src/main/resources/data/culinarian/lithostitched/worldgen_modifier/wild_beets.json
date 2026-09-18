@@ -1,0 +1,6 @@
+{
+  "type": "lithostitched:add_features",
+  "biomes": "#culinarian:beets_viable",
+  "features": "culinarian:wild_beets",
+  "step": "vegetal_decoration"
+}

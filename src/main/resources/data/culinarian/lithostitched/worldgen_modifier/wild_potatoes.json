@@ -1,0 +1,6 @@
+{
+  "type": "lithostitched:add_features",
+  "biomes": "#c:is_cold",
+  "features": "culinarian:wild_potatoes",
+  "step": "vegetal_decoration"
+}

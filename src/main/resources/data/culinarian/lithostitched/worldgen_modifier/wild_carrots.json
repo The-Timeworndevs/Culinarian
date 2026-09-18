@@ -1,0 +1,6 @@
+{
+  "type": "lithostitched:add_features",
+  "biomes": "#c:is_temperate",
+  "features": "culinarian:wild_carrots",
+  "step": "vegetal_decoration"
+}

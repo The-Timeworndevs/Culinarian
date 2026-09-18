@@ -22,8 +22,11 @@ public class CulinarianTabs {
     }).build();
 
     public static final ResourceKey<CreativeModeTab> CULINARIAN_NATURE_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "culinarian_nature_tab"));
-    public static final CreativeModeTab CULINARIAN_NATURE = FabricCreativeModeTab.builder().icon(()-> new ItemStack(CulinarianBlocks.WILD_AGARIC)).title(Component.translatable("group.culinarian.nature")).displayItems((parameters, output) -> {
+    public static final CreativeModeTab CULINARIAN_NATURE = FabricCreativeModeTab.builder().icon(()-> new ItemStack(CulinarianBlocks.WILD_CARROTS)).title(Component.translatable("group.culinarian.nature")).displayItems((parameters, output) -> {
         output.accept(CulinarianBlocks.WILD_WHEAT);
+        output.accept(CulinarianBlocks.WILD_CARROTS);
+        output.accept(CulinarianBlocks.WILD_POTATOES);
+        output.accept(CulinarianBlocks.WILD_BEETS);
         output.accept(CulinarianBlocks.WILD_PORTOBELLO);
         output.accept(CulinarianBlocks.WILD_AGARIC);
         output.accept(CulinarianItems.PORTOBELLO_SPORES);

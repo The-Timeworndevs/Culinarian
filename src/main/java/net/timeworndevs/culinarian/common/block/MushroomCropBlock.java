@@ -24,7 +24,7 @@ public class MushroomCropBlock extends CropBlock {
                 float blockSpeed = 0.0F;
                 BlockState blockState = level.getBlockState(below.offset(xx, 0, zz));
                 if (blockState.is(CulinarianTags.MUSHROOM_BLOCK_PLANTABLES)) {
-                    blockSpeed = 1.0F;
+                    blockSpeed = 3.0F;
                 }
 
                 if (xx != 0 || zz != 0) {

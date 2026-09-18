@@ -1,5 +1,5 @@
 {
-  "feature": "culinarian:wild_portobello",
+  "feature": "culinarian:wild_carrots",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
@@ -45,7 +45,7 @@
           },
           {
             "type": "minecraft:matching_blocks",
-            "blocks": "#culinarian:mushroom_vegetation",
+            "blocks": "minecraft:grass_block",
             "offset": [
               0,
               -1,
