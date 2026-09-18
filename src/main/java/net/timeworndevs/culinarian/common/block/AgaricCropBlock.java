@@ -1,7 +1,7 @@
 package net.timeworndevs.culinarian.common.block;
 
 import net.minecraft.world.level.ItemLike;
-import net.timeworndevs.culinarian.common.CulinarianItems;
+import net.timeworndevs.culinarian.common.init.CulinarianItems;
 
 public class AgaricCropBlock extends MushroomCropBlock{
     public AgaricCropBlock(Properties settings) {

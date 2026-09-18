@@ -1,0 +1,9 @@
+{
+  "type": "lithostitched:add_features",
+  "biomes": "#culinarian:wild_mushroom_island_viable",
+  "features": [
+    "culinarian:wild_portobello_island",
+    "culinarian:wild_agaric_island"
+  ],
+  "step": "vegetal_decoration"
+}

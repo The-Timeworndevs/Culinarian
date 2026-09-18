@@ -1,7 +1,7 @@
 {
-  "item.culinarian.portabello_mushroom": "Portabello Mushroom",
-  "item.culinarian.portabello_spores": "Portabello Spores",
-  "item.culinarian.grilled_portabello": "Grilled Portabello",
+  "item.culinarian.portobello_mushroom": "Portobello Mushroom",
+  "item.culinarian.portobello_spores": "Portobello Spores",
+  "item.culinarian.grilled_portobello": "Grilled Portobello",
   "item.culinarian.agaric_mushroom": "Agaric Mushroom",
   "item.culinarian.agaric_spores": "Agaric Spores",
   "item.culinarian.grilled_agaric": "Grilled Agaric",
@@ -20,13 +20,13 @@
   "item.culinarian.wither_rose_petals": "Wither Rose Petals",
   "item.culinarian.rose_lokum": "Rose Turkish Delight",
 
-  "group.culinarian.main": "Culinarian Main Items",
-  "group.culinarian.block": "Culinarian Main Blocks",
+  "block.culinarian.wild_wheat": "Wild Wheat",
+  "block.culinarian.wild_portobello": "Wild Portobello",
+  "block.culinarian.wild_agaric": "Wild Agaric",
 
-  "tag.item.culinarian.portabello": "Portabello Mushrooms",
-  "tag.item.culinarian.agaric": "Agaric Mushrooms",
-  "tag.item.culinarian.red_onion": "Red Onion",
-  "tag.item.culinarian.white_onion": "White Onion",
+  "group.culinarian.foods": "Culinarian Food & Drink",
+  "group.culinarian.nature": "Culinarian Natural Blocks",
+  "group.culinarian.block": "Culinarian Blocks",
 
   "tag.block.culinarian.mushroom_crop_plantables": "Mushroom Substrates",
 

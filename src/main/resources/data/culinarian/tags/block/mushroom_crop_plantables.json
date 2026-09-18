@@ -1,8 +1,6 @@
 {
   "values": [
-    "minecraft:mycelium",
-    "minecraft:podzol",
-    "minecraft:dirt",
-    "minecraft:grass_block"
+    "#culinarian:mushroom_vegetation",
+    "minecraft:hay_block"
   ]
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "culinarian:block/agaric_stage7"
+  }
+}

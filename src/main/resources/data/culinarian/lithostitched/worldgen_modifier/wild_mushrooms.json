@@ -1,0 +1,9 @@
+{
+  "type": "lithostitched:add_features",
+  "biomes": "#culinarian:wild_mushroom_viable",
+  "features": [
+    "culinarian:wild_portobello",
+    "culinarian:wild_agaric"
+  ],
+  "step": "vegetal_decoration"
+}

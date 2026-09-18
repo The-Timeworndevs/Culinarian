@@ -1,0 +1,6 @@
+{
+  "type": "lithostitched:add_features",
+  "biomes": "#culinarian:wheat_viable",
+  "features": "culinarian:wild_wheat",
+  "step": "vegetal_decoration"
+}

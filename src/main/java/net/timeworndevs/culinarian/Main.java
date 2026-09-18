@@ -2,9 +2,10 @@ package net.timeworndevs.culinarian;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.timeworndevs.culinarian.common.CulinarianBlocks;
-import net.timeworndevs.culinarian.common.CulinarianItems;
-import net.timeworndevs.culinarian.common.CulinarianTabs;
+import net.timeworndevs.culinarian.common.init.CulinarianBlocks;
+import net.timeworndevs.culinarian.common.init.CulinarianItems;
+import net.timeworndevs.culinarian.common.init.CulinarianLootTableEvents;
+import net.timeworndevs.culinarian.common.init.CulinarianTabs;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,6 +26,9 @@ public class Main implements ModInitializer {
 
         LOGGER.info("Registering Tabs");
         CulinarianTabs.init();
+
+        LOGGER.info("Registering Loot");
+        CulinarianLootTableEvents.init();
 
 	}
 }

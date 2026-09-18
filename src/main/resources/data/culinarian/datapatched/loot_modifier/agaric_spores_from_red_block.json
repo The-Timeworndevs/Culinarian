@@ -1,0 +1,39 @@
+{
+  "type": "datapatched:add_pools",
+  "targets": "minecraft:blocks/red_mushroom_block",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 2.0,
+                    "min": -6.0
+                  },
+                  "function": "minecraft:set_count"
+                },
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 0.0
+                  }
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                }
+              ],
+              "name": "culinarian:agaric_spores"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

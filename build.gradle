@@ -29,6 +29,7 @@ dependencies {
 	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
 	implementation "maven.modrinth:lithostitched:${project.ls_version}"
+	implementation "maven.modrinth:datapatched:${project.dp_version}"
 }
 
 processResources {

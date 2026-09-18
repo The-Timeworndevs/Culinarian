@@ -1,7 +1,7 @@
 package net.timeworndevs.culinarian.common.block;
 
 import net.minecraft.world.level.ItemLike;
-import net.timeworndevs.culinarian.common.CulinarianItems;
+import net.timeworndevs.culinarian.common.init.CulinarianItems;
 
 public class PortabelloCropBlock extends MushroomCropBlock{
     public PortabelloCropBlock(Properties settings) {
@@ -10,6 +10,6 @@ public class PortabelloCropBlock extends MushroomCropBlock{
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return CulinarianItems.PORTABELLO_SPORES;
+        return CulinarianItems.PORTOBELLO_SPORES;
     }
 }
