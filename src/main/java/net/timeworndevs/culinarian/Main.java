@@ -4,7 +4,6 @@ import net.fabricmc.api.ModInitializer;
 
 import net.timeworndevs.culinarian.common.init.CulinarianBlocks;
 import net.timeworndevs.culinarian.common.init.CulinarianItems;
-import net.timeworndevs.culinarian.common.init.CulinarianLootTableEvents;
 import net.timeworndevs.culinarian.common.init.CulinarianTabs;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,7 +27,6 @@ public class Main implements ModInitializer {
         CulinarianTabs.init();
 
         LOGGER.info("Registering Loot");
-        CulinarianLootTableEvents.init();
 
 	}
 }
