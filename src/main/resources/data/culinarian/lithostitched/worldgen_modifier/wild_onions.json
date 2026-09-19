@@ -1,0 +1,9 @@
+{
+  "type": "lithostitched:add_features",
+  "biomes": "#culinarian:onions_viable",
+  "features": [
+    "culinarian:wild_white_onions",
+    "culinarian:wild_red_onions"
+  ],
+  "step": "vegetal_decoration"
+}

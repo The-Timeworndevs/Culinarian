@@ -1,5 +1,5 @@
 {
-  "parent": "culinarian:block/crop_cross",
+  "parent": "minecraft:block/crop",
   "textures": {
     "cross": "culinarian:block/red_onion_stage3"
   }

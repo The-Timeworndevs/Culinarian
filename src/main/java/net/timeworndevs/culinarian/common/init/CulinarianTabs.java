@@ -18,7 +18,15 @@ public class CulinarianTabs {
         output.accept(CulinarianItems.AGARIC_MUSHROOM);
         output.accept(CulinarianItems.GRILLED_PORTOBELLO);
         output.accept(CulinarianItems.GRILLED_AGARIC);
+        output.accept(CulinarianItems.WHITE_ONION);
+        output.accept(CulinarianItems.RED_ONION);
         output.accept(CulinarianItems.BAKED_CARROT);
+        output.accept(CulinarianItems.STEAK_AND_POTATOES);
+    }).build();
+
+    public static final ResourceKey<CreativeModeTab> CULINARIAN_MATERIAL_ITEMS_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "culinarian_materials_tab"));
+    public static final CreativeModeTab CULINARIAN_MATERIAL_ITEMS = FabricCreativeModeTab.builder().icon(()-> new ItemStack(CulinarianItems.PLATE)).title(Component.translatable("group.culinarian.materials")).displayItems((parameters, output) -> {
+        output.accept(CulinarianItems.PLATE);
     }).build();
 
     public static final ResourceKey<CreativeModeTab> CULINARIAN_NATURE_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Main.MOD_ID, "culinarian_nature_tab"));
@@ -29,12 +37,15 @@ public class CulinarianTabs {
         output.accept(CulinarianBlocks.WILD_BEETS);
         output.accept(CulinarianBlocks.WILD_PORTOBELLO);
         output.accept(CulinarianBlocks.WILD_AGARIC);
+        output.accept(CulinarianBlocks.WILD_WHITE_ONIONS);
+        output.accept(CulinarianBlocks.WILD_RED_ONIONS);
         output.accept(CulinarianItems.PORTOBELLO_SPORES);
         output.accept(CulinarianItems.AGARIC_SPORES);
     }).build();
 
     public static void init() {
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, CULINARIAN_FOOD_ITEMS_KEY, CULINARIAN_FOOD_ITEMS);
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, CULINARIAN_MATERIAL_ITEMS_KEY, CULINARIAN_MATERIAL_ITEMS);
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, CULINARIAN_NATURE_KEY, CULINARIAN_NATURE);
     }
 }

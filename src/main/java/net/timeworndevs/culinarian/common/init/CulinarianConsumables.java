@@ -15,6 +15,8 @@ public class CulinarianConsumables {
     public static final FoodProperties GRILLED_AGARIC_FOOD = new FoodProperties(3, 2f, false);
     public static final FoodProperties GRILLED_PORTABELLO_FOOD = new FoodProperties(8, 9f, false);
     public static final FoodProperties BAKED_CARROT_FOOD = new FoodProperties(6, 6.5f, false);
+    public static final FoodProperties ONION_FOOD = new FoodProperties(3, 1.5f, false);
+    public static final FoodProperties STEAK_AND_POTATOES = new FoodProperties(12, 10.5f, false);
 
     //Food Effects
     public static final Consumable AGARIC_EFFECTS = Consumables.defaultFood()
@@ -22,5 +24,8 @@ public class CulinarianConsumables {
             .build();
     public static final Consumable GRILLED_AGARIC_EFFECTS = Consumables.defaultFood()
             .onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HUNGER, 6*20, 1), 0.9f))
+            .build();
+    public static final Consumable STEAK_AND_POTATOES_EFFECTS = Consumables.defaultFood()
+            .onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.RESISTANCE, 20*20, 1), 1.0f))
             .build();
 }

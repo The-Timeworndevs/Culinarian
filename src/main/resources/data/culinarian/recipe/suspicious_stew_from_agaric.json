@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "suspicious_stew",
+  "ingredients": [
+    "minecraft:bowl",
+    "#c:brown_mushrooms",
+    "#c:brown_mushrooms",
+    "#c:red_mushrooms"
+  ],
+  "result": {
+    "components": {
+      "minecraft:suspicious_stew_effects": [
+        {
+          "duration": 60,
+          "id": "minecraft:poison"
+        }
+      ]
+    },
+    "id": "minecraft:suspicious_stew"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "culinarian:block/white_onion_stage7"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:cooked_beef",
+    "minecraft:baked_potato",
+    "culinarian:plate"
+  ],
+  "result": {
+    "id": "culinarian:steak_and_potatoes"
+  }
+}
