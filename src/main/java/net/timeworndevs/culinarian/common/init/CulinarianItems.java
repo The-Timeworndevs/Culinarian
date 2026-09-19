@@ -27,8 +27,8 @@ public class CulinarianItems {
     //Seeds
     public static final Item PORTOBELLO_SPORES = registerItem("portobello_spores", properties -> new BlockItem(CulinarianBlocks.PORTOBELLO_CROP, properties));
     public static final Item AGARIC_SPORES = registerItem("agaric_spores", properties -> new BlockItem(CulinarianBlocks.AGARIC_CROP, properties));
-    public static final Item WHITE_ONION = registerItem("white_onion", properties -> new BlockItem(CulinarianBlocks.WHITE_ONION_CROP, properties.food(CulinarianConsumables.ONION_FOOD)));
-    public static final Item RED_ONION = registerItem("red_onion", properties -> new BlockItem(CulinarianBlocks.RED_ONION_CROP, properties.food(CulinarianConsumables.ONION_FOOD)));
+    public static final Item WHITE_ONION = registerItem("white_onion", properties -> new BlockItem(CulinarianBlocks.WHITE_ONION_CROP, properties.food(CulinarianConsumables.ONION_FOOD, CulinarianConsumables.ONION_EFFECTS)));
+    public static final Item RED_ONION = registerItem("red_onion", properties -> new BlockItem(CulinarianBlocks.RED_ONION_CROP, properties.food(CulinarianConsumables.ONION_FOOD, CulinarianConsumables.ONION_EFFECTS)));
 
 
     public static ResourceKey<Item> getRK(Item item) {

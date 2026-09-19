@@ -25,7 +25,10 @@ public class CulinarianConsumables {
     public static final Consumable GRILLED_AGARIC_EFFECTS = Consumables.defaultFood()
             .onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HUNGER, 6*20, 1), 0.9f))
             .build();
+    public static final Consumable ONION_EFFECTS = Consumables.defaultFood()
+            .onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.BLINDNESS, 4*20, 0), 0.9f))
+            .build();
     public static final Consumable STEAK_AND_POTATOES_EFFECTS = Consumables.defaultFood()
-            .onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.RESISTANCE, 20*20, 1), 1.0f))
+            .onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.RESISTANCE, 20*20, 0), 1.0f))
             .build();
 }

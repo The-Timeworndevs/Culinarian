@@ -16,6 +16,7 @@ import net.minecraft.world.level.material.PushReaction;
 import net.timeworndevs.culinarian.Main;
 import net.timeworndevs.culinarian.common.block.AgaricCropBlock;
 import net.timeworndevs.culinarian.common.block.PortabelloCropBlock;
+import net.timeworndevs.culinarian.common.block.RedOnionCropBlock;
 import net.timeworndevs.culinarian.common.block.WhiteOnionCropBlock;
 
 import java.util.function.Function;
@@ -26,7 +27,7 @@ public class CulinarianBlocks {
     public static final Block PORTOBELLO_CROP = registerBlockWithoutBlockItem("portobello_crop", properties -> new PortabelloCropBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_BROWN)));
     public static final Block AGARIC_CROP = registerBlockWithoutBlockItem("agaric_crop", properties -> new AgaricCropBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_RED)));
     public static final Block WHITE_ONION_CROP = registerBlockWithoutBlockItem("white_onion_crop", properties -> new WhiteOnionCropBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_RED)));
-    public static final Block RED_ONION_CROP = registerBlockWithoutBlockItem("red_onion_crop", properties -> new WhiteOnionCropBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_RED)));
+    public static final Block RED_ONION_CROP = registerBlockWithoutBlockItem("red_onion_crop", properties -> new RedOnionCropBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_RED)));
 
     //Wild crops
     public static final Block WILD_WHEAT = registerBlock("wild_wheat", properties -> new TallGrassBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_YELLOW).offsetType(BlockBehaviour.OffsetType.XYZ)));
