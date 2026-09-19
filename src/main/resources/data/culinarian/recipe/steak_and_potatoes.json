@@ -3,6 +3,7 @@
   "ingredients": [
     "minecraft:cooked_beef",
     "minecraft:baked_potato",
+    "culinarian:grilled_portobello",
     "culinarian:plate"
   ],
   "result": {
