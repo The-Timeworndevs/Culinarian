@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "culinarian:agaric_mushroom"
+    "culinarian:agaric_mushroom",
+    "minecraft:red_mushroom"
   ]
 }
