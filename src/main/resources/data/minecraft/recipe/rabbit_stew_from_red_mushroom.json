@@ -6,7 +6,7 @@
     "minecraft:cooked_rabbit",
     "minecraft:bowl",
     "minecraft:carrot",
-    "#c:brown_mushrooms"
+    "culinarian:portobello_mushroom"
   ],
   "result": {
     "id": "minecraft:rabbit_stew"
