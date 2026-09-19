@@ -9,7 +9,6 @@ import net.timeworndevs.culinarian.Main;
 public class CulinarianTags {
 
     public static final TagKey<Block> MUSHROOM_BLOCK_PLANTABLES = blockTagKey("mushroom_crop_plantables");
-    public static final TagKey<Block> MUSHROOM_VEGETATION = blockTagKey("mushroom_vegetation");
 
     public static TagKey<Block> blockTagKey(String id) {
         return blockTagKey(Main.MOD_ID, id);

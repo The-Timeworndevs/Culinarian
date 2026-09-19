@@ -16,7 +16,6 @@ import net.minecraft.world.level.material.PushReaction;
 import net.timeworndevs.culinarian.Main;
 import net.timeworndevs.culinarian.common.block.AgaricCropBlock;
 import net.timeworndevs.culinarian.common.block.PortabelloCropBlock;
-import net.timeworndevs.culinarian.common.block.WildMushroomBlock;
 
 import java.util.function.Function;
 
@@ -31,8 +30,8 @@ public class CulinarianBlocks {
     public static final Block WILD_CARROTS = registerBlock("wild_carrots", properties -> new TallGrassBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_LIGHT_GREEN).offsetType(BlockBehaviour.OffsetType.XYZ)));
     public static final Block WILD_POTATOES = registerBlock("wild_potatoes", properties -> new TallGrassBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_LIGHT_GREEN).offsetType(BlockBehaviour.OffsetType.XYZ)));
     public static final Block WILD_BEETS = registerBlock("wild_beets", properties -> new TallGrassBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_LIGHT_GREEN).offsetType(BlockBehaviour.OffsetType.XYZ)));
-    public static final Block WILD_PORTOBELLO = registerBlock("wild_portobello", properties -> new WildMushroomBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_BROWN).offsetType(BlockBehaviour.OffsetType.XYZ)));
-    public static final Block WILD_AGARIC = registerBlock("wild_agaric", properties -> new WildMushroomBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_RED).offsetType(BlockBehaviour.OffsetType.XYZ)));
+    public static final Block WILD_PORTOBELLO = registerBlock("wild_portobello", properties -> new TallGrassBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_BROWN).offsetType(BlockBehaviour.OffsetType.XYZ)));
+    public static final Block WILD_AGARIC = registerBlock("wild_agaric", properties -> new TallGrassBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_RED).offsetType(BlockBehaviour.OffsetType.XYZ)));
 
     private static Block registerBlockWithoutBlockItem(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Main.MOD_ID, name))));
