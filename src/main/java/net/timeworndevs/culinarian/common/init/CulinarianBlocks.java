@@ -14,10 +14,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.timeworndevs.culinarian.Main;
-import net.timeworndevs.culinarian.common.block.AgaricCropBlock;
-import net.timeworndevs.culinarian.common.block.PortabelloCropBlock;
-import net.timeworndevs.culinarian.common.block.RedOnionCropBlock;
-import net.timeworndevs.culinarian.common.block.WhiteOnionCropBlock;
+import net.timeworndevs.culinarian.common.block.*;
 
 import java.util.function.Function;
 
@@ -28,6 +25,7 @@ public class CulinarianBlocks {
     public static final Block AGARIC_CROP = registerBlockWithoutBlockItem("agaric_crop", properties -> new AgaricCropBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_RED)));
     public static final Block WHITE_ONION_CROP = registerBlockWithoutBlockItem("white_onion_crop", properties -> new WhiteOnionCropBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_RED)));
     public static final Block RED_ONION_CROP = registerBlockWithoutBlockItem("red_onion_crop", properties -> new RedOnionCropBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_RED)));
+    public static final Block RADISH_CROP = registerBlockWithoutBlockItem("radish_crop", properties -> new RadishCropBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_RED)));
 
     //Wild crops
     public static final Block WILD_WHEAT = registerBlock("wild_wheat", properties -> new TallGrassBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_YELLOW).offsetType(BlockBehaviour.OffsetType.XYZ)));
@@ -38,6 +36,7 @@ public class CulinarianBlocks {
     public static final Block WILD_AGARIC = registerBlock("wild_agaric", properties -> new TallGrassBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_RED).offsetType(BlockBehaviour.OffsetType.XYZ)));
     public static final Block WILD_WHITE_ONIONS = registerBlock("wild_white_onions", properties -> new TallGrassBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_RED).offsetType(BlockBehaviour.OffsetType.XYZ)));
     public static final Block WILD_RED_ONIONS = registerBlock("wild_red_onions", properties -> new TallGrassBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_RED).offsetType(BlockBehaviour.OffsetType.XYZ)));
+    public static final Block WILD_RADISHES = registerBlock("wild_radishes", properties -> new TallGrassBlock(properties.sound(SoundType.CROP).noOcclusion().noCollision().randomTicks().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_RED).offsetType(BlockBehaviour.OffsetType.XYZ)));
 
     private static Block registerBlockWithoutBlockItem(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Main.MOD_ID, name))));

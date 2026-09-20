@@ -20,6 +20,7 @@ public class CulinarianTabs {
         output.accept(CulinarianItems.GRILLED_AGARIC);
         output.accept(CulinarianItems.WHITE_ONION);
         output.accept(CulinarianItems.RED_ONION);
+        output.accept(CulinarianItems.RADISH_ROOT);
         output.accept(CulinarianItems.BAKED_CARROT);
         output.accept(CulinarianItems.STEAK_AND_POTATOES);
     }).build();
@@ -39,6 +40,8 @@ public class CulinarianTabs {
         output.accept(CulinarianBlocks.WILD_AGARIC);
         output.accept(CulinarianBlocks.WILD_WHITE_ONIONS);
         output.accept(CulinarianBlocks.WILD_RED_ONIONS);
+        output.accept(CulinarianBlocks.WILD_RADISHES);
+        output.accept(CulinarianItems.RADISH_SEEDS);
         output.accept(CulinarianItems.PORTOBELLO_SPORES);
         output.accept(CulinarianItems.AGARIC_SPORES);
     }).build();

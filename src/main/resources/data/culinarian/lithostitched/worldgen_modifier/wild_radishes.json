@@ -1,0 +1,6 @@
+{
+  "type": "lithostitched:add_features",
+  "biomes": "#culinarian:radishes_viable",
+  "features": "culinarian:wild_radishes",
+  "step": "vegetal_decoration"
+}
