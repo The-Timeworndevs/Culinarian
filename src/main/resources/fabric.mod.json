@@ -16,7 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-          "net.timeworndevs.culinarian.Main"
+			"net.timeworndevs.culinarian.Main"
+		],
+		"fabric-datagen": [
+			"net.timeworndevs.culinarian.data.DataGenerator"
 		]
 	},
 	"mixins": [
